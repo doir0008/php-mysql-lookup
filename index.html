@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 2</title>
+<style>
+	body{background:#FFFDEC;}
+	#inventoryText, #stockText{ display:inline; color:#200; background:#BBBBFF; min-height:0px;/**/}
+</style>
+<script language="javascript" type="text/javascript" src="client.js"></script>
+
+</head>
+
+<body>
+
+<div align="center"  id="wrapperDiv">
+    
+    <form method="get" id="productForm" action="null">
+        Check product quantity:<select name="itemSelect" onChange="getInventory(this.value);">
+            <option value="" selected="selected"></option>
+            <option value="camera">DSLR Camera</option>
+            <option value="sdcard">SD Card</option>
+            <option value="bag">Camera Bag</option>
+            <option value="gopro">GoPro</option>
+        </select>
+    </form>
+	
+    <div id="outputDiv">
+    	<p id="inventoryText"></p>
+        <p id="stockText"></p>
+    </div>
+    
+</div>
+</body>
+</html>
